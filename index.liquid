@@ -2,12 +2,23 @@
 layout: base.liquid
 ---
 
-<main>
-  <h1>Latest Posts</h1>
-  <ul>
+<main class="flex flex-col space-y-4">
+  <h1
+    class="mx-auto text-3xl lg:text-4xl font-bold text-gray-900 border-b-2 border-b-emerald-600"
+  >
+    Latest Posts
+  </h1>
+  <ul class="mx-auto divide-y divide-slate-200">
     {%- for post in collections.post -%}
-    <li>
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    <li class="py-6">
+      <a href="{{ post.url }}" class="group"
+        ><div>
+          <span class="group-hover:underline text-lg font-semibold">{{
+            post.data.title
+          }}</span>
+          <div>{{ post.data.description }}</div>
+        </div></a
+      >
     </li>
     {%- endfor -%}
   </ul>

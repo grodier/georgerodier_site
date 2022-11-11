@@ -8,15 +8,17 @@
   </head>
   <body class="h-full">
     <div class="min-h-full flex flex-col">
-      <header class="max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h1
-          class="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight border-b-2 border-gray-100 py-6"
-        >
-          <a href="{{ '/' | url }}">George Rodier</a>
-        </h1>
-      </header>
-      <div class="mx-auto px-4 sm:px-6 lg:px-8">
-        {{ content }}
+      <div class="space-y-6">
+        <header class="max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+          <h1
+            class="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight border-b-2 border-slate-100 py-6"
+          >
+            <a href="{{ '/' | url }}">George Rodier</a>
+          </h1>
+        </header>
+        <div class="mx-auto px-4 sm:px-6 lg:px-8">
+          {{ content }}
+        </div>
       </div>
       <footer class="mt-auto">TBD FOOTER</footer>
     </div>
