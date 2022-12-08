@@ -16,4 +16,12 @@ module.exports = function (eleventyConfig) {
     mode: "directory",
     postsMatching: "_posts/*/*.md",
   });
+
+  eleventyConfig.addShortcode("ogImg", function ({ url, fileSlug, inputPath }) {
+    if (inputPath.startsWith("./_posts/")) {
+      return `${url}og-img-${fileSlug}.jpg`;
+    }
+
+    return "defaultpathtoogimage";
+  });
 };
