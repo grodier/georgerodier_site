@@ -1,3 +1,5 @@
+const pageAssetsPlugin = require("eleventy-plugin-page-assets");
+
 const now = String(Date.now());
 
 module.exports = function (eleventyConfig) {
@@ -8,5 +10,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode("version", function () {
     return now;
+  });
+
+  eleventyConfig.addPlugin(pageAssetsPlugin, {
+    mode: "directory",
+    postsMatching: "_posts/*/*.md",
   });
 };
