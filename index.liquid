@@ -11,14 +11,21 @@ layout: base.liquid
   <ul class="mx-auto divide-y divide-slate-200">
     {%- for post in collections.posts -%}
     <li class="py-6">
-      <a href="{{ post.url }}" class="group"
-        ><div>
-          <span class="group-hover:underline text-lg font-semibold">{{
-            post.data.title
-          }}</span>
-          <div>{{ post.data.description }}</div>
-        </div></a
-      >
+      <div>
+        <a href="{{ post.url }}" class="group"
+          ><div>
+            <span
+              class="group-hover:underline text-lg md:text-xl font-semibold"
+              >{{ post.data.title }}</span
+            >
+            <div>{{ post.data.description }}</div>
+          </div></a
+        >
+        <div class="flex flex-col leading-5">
+          <em>{{ post.data.publishedDate | cleanDate }}</em>
+          <em>By: {{ post.data.author | default: "George Rodier" }}</em>
+        </div>
+      </div>
     </li>
     {%- endfor -%}
   </ul>
