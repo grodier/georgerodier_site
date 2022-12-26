@@ -26,7 +26,13 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("cleanDate", function (dateString) {
-    const options = { year: "numeric", month: "long", day: "numeric" };
+    const options = {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      timeZone: "UTC",
+    };
+    console.log(dateString);
     return new Date(dateString).toLocaleDateString(undefined, options);
   });
 };
