@@ -10,7 +10,7 @@ A developer with no opinions? Blasphemy!
 
 Well no worries - I have plenty of opinions. But I don't have as much time to strategize how I want to share them here. My time, attention, and priorities are currently pulling me elsewhere with my first priority being my job (in terms of my dev life - family, health, etc are definitely higher priorities).
 
-I've done a lot in my career from iOS and Android apps to C# api's to C++ libraries for desktop apps to fullstack Angular and React apps. Currently I've been focused on building performant, component-first React web frameworks as well as client side JavaScript libraries for managing data. Outside of work, I still like to code and tinker and build (and destroy) and mostly iterate and learn new things.
+I've done a lot in my career from iOS and Android apps to C# api's to C++ libraries for desktop apps to fullstack Angular and React apps. Currently I've been focused on building performant, component-first, React web frameworks as well as client side JavaScript libraries for managing data. Outside of work, I still like to code and tinker and build (and destroy) and mostly iterate and learn new things.
 
 So yeah - that takes up a lot of time and headspace. And right now those are things I'd rather be doing too (considering this is my space I think that's important).
 
