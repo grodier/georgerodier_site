@@ -5,16 +5,18 @@
   "main": "index.js",
   "scripts": {
     "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i styles/tailwind.css -o _site/style.css --minify",
-    "start": "eleventy --serve & npx tailwindcss -i styles/tailwind.css -o _site/style.css --watch"
+    "start": "eleventy --serve & npx tailwindcss -i styles/tailwind.css -o _site/style.css --watch",
+    "og": "node scripts/gen-og-img.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
+    "@sparticuz/chromium": "^109.0.1",
     "@tailwindcss/typography": "^0.5.8",
     "eleventy-plugin-page-assets": "github:maxboeck/eleventy-plugin-page-assets",
-    "puppeteer": "^19.3.0",
+    "puppeteer": "^19.4.1",
     "tailwindcss": "^3.2.2"
   }
 }
